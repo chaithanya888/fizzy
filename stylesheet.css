@@ -1,0 +1,64 @@
+
+header{
+    text-align:center;
+    font-size:40px;
+    color: blue;
+    background-color: skyblue;
+    
+}
+body{
+    background-image: url("image/fizzy.png"); 
+     background-size: cover;  
+     background-position: center; 
+      background-repeat: no-repeat;  
+      height: 100vh; 
+     width: 100vw;
+}
+nav{
+    justify-content: center;
+    color: rgb(23, 138, 239);
+    display: flex;
+    background-color: slategray;
+    text-decoration: none;
+}
+.search{
+         padding: 10px 20px; 
+        filter:transparent;
+}
+nav a{ 
+    text-transform: uppercase;
+padding: 12px 20px;
+}
+nav a:hover{
+    background-color:aqua;
+
+}
+.items{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.list-iteams img{
+    max-width: 100%;
+    height: auto;
+}
+.list-iteams{
+    margin: 15px;
+    padding: 10px;
+    background-color: rgb(rgb(56, 133, 180));
+    border: 2px solid;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100px;
+}
+.footer{
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    color:blue;
+    background-color: skyblue;
+    text-align: center;
+    font-family: 'Segoe UI';
+    bottom: 0%;
+}

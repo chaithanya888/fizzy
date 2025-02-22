@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+
+}
+p{
+    text-align: center;
+    text-transform: uppercase;
+
+}
+#owner{
+    text-align: center;
+    position: fixed;
+    font-family: Georgia;
+    width: 100%;
+   bottom: 0%;
+
+}
+				
