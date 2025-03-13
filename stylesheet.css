@@ -16,10 +16,9 @@ body{
 }
 nav{
     justify-content: center;
-    color: rgb(23, 138, 239);
     display: flex;
     background-color: slategray;
-    text-decoration: none;
+   position: static;
 }
 .search{
          padding: 10px 20px; 
@@ -28,7 +27,11 @@ nav{
 nav a{ 
     text-transform: uppercase;
 padding: 12px 20px;
+color: blue ;
+text-decoration: none;
+
 }
+
 nav a:hover{
     background-color:aqua;
 
