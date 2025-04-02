@@ -55,35 +55,32 @@ nav a:hover{
     background-color:rgb(20, 73, 122);
 
 }
-.items{
+
+.newly-added-items{
     gap: 10px;
     display: flex;
     flex-wrap: wrap;
-   
 }
-.list-iteams img{
+.new-product img{
     width: auto;
     height: 200px;
     margin: auto;
     display: block;
     object-fit: cover;
     
-}
-.list-iteams{
+}.new-product{
     margin: 10px;
     padding: 8px 10px;
-    border:none;
-    text-align: center;
-    line-height: 5px;
-    transition: box-shadow 0.3s ease;
     text-transform: uppercase;
-    word-wrap: break-word;
-    white-space: normal;
+    text-align: center;
+    border: none;
+    transition:box-shadow 0.3s ease;
+    line-height: 5px;
     width: 200px;
     height: 370px;
-}
-.list-iteams:hover{
-    box-shadow: 8px 8px 21px rgba(0, 0, 0, 0.8);
+  
+}.new-product:hover{
+box-shadow: 8px 8px 21px rgba(0, 0, 0, 0.8);
 }
 .footer p{
     position: absolute;
