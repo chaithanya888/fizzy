@@ -1,8 +1,6 @@
 
 
 
-
-
 let womencloths=[];
 function addanycloths(id,imgUrl,username,price,button1,button2){
   let addcloths= {
@@ -57,4 +55,15 @@ buttons.forEach(button => {
     }
   );
 
+});
+
+const buybutton=document.querySelectorAll(".buy-button");
+let buyingproducts = [];
+buybutton.forEach(buybutton =>{
+    buybutton.addEventListener("click", () =>{
+      
+      buyingproducts++;
+    console.log(`clicked buy button ${buyingproducts}`);
+
+    })
 });
