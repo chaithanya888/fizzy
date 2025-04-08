@@ -36,34 +36,55 @@ iteams.innerHTML = womencloths
               <p>${item.username}</p>
               <p>${item.price}</p>
               <p class="cart-button">${item.addbutton}</p>
-              <p class="buy-button">${item.buybutton}</p>
+              <p class="buy-button" data-id="${item.id}">${item.buybutton}</p>
             </div>  `;
   })
   .join("");
 
 
 
-let items = document.getElementsByClassName("quantity-shower")[0];
+let Quantity = document.getElementsByClassName("quantity-shower")[0];
 let value = parseInt(document.getElementsByClassName("items"))||0;
 const buttons = document.querySelectorAll(".cart-button");
 buttons.forEach(button => {
   button.addEventListener("click", function () {
     
       value++;
-      items.innerHTML=`<span>${value}</span>`;    
+      Quantity.innerHTML=`<span>${value}</span>`;    
       console.log(`Added ${value} to cart`);
     }
   );
 
 });
 
-const buybutton=document.querySelectorAll(".buy-button");
-let buyingproducts = [];
-buybutton.forEach(buybutton =>{
-    buybutton.addEventListener("click", () =>{
+const buybutton = document.querySelectorAll(".buy-button");
+Ordereditems=[];
+buybutton.forEach(function(button) {
+  button.addEventListener("click",function () {
+      const productId = this.getAttribute("data-id");
+      const orderId= womencloths.find((item)=>item.id==productId);
+     if (orderId){
       
-      buyingproducts++;
-    console.log(`clicked buy button ${buyingproducts}`);
+      Ordereditems.push(orderId);
+      const index= Ordereditems.length-1;
+      console.log("ordered product!");
+     }else{
 
-    })
+      console.log("Ordered not placede error!");
+     }
+
+    });
+});
+
+const inputvalue =document.getElementsByClassName("search-product")[0];
+const searchbtn = document.getElementsByClassName("searching")[0];
+const searchingproduct=document.getElementById("searching-products");
+searchbtn.addEventListener("click",()=>{
+  let text=inputvalue.value;
+  womencloths.forEach(item => {
+    if(item.username===text){
+       console.log("found the product");
+    }
+
+  });
 });

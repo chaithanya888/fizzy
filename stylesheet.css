@@ -100,12 +100,35 @@ box-shadow: 8px 8px 21px rgba(0, 0, 0, 0.8);
     width: 40px;
     height: 55px;
     border: none;
-    margin-right:40px ;
-    cursor: pointer;
+    margin-right:10px;
+   
   
+}.menu-option{
+    display: none;
+    position: absolute;
+    background-color: #1997FB;
+    max-width: 200px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 1.1);
+
+}.arrow-drop:hover .menu-option{
+    display: block;
+}.arrow-drop{
+    display: inline-block;
+    position: relative;
 }
-.page-menu button:hover{
- border-color: #1997FB;
+.arrow-drop img{
+    display: flex;
+    background: none;
+    width: 28px;
+    height: 35px;
+    margin-top: 24px;
+    transform: rotate(90deg);
+    border: none;
+    margin-right:10px;
+    cursor: pointer;
+   
+} .arrow-drop :hover{
+    transform: rotate(-90deg);
 }
 .add-to-cart{
   position: relative;
@@ -147,6 +170,7 @@ box-shadow: 8px 8px 21px rgba(0, 0, 0, 0.8);
     width: 50px;
     filter: drop-shadow(2px 8px 8px #020a10f0) ;
     display: flex;
+    margin-left: 20px;
 }
 .search-bar img {
     height: 37px;
@@ -199,7 +223,7 @@ box-shadow: 8px 8px 21px rgba(0, 0, 0, 0.8);
     background-color: white;
     color: black;
 }
-.dropdown .cointaner{
+.cointaner{
     display: none;
     position: absolute;
     background-color: #1997FB;
