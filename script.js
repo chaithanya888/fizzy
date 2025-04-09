@@ -78,13 +78,23 @@ buybutton.forEach(function(button) {
 
 const inputvalue =document.getElementsByClassName("search-product")[0];
 const searchbtn = document.getElementsByClassName("searching")[0];
-const searchingproduct=document.getElementById("searching-products");
 searchbtn.addEventListener("click",()=>{
-  let text=inputvalue.value;
-  womencloths.forEach(item => {
-    if(item.username===text){
-       console.log("found the product");
-    }
-
-  });
+  let text=inputvalue.value.toLowerCase();
+const matchingproduct=womencloths.filter(item=>item.username===text);
+if(matchingproduct.length>0){
+iteams.innerHTML=matchingproduct.map((item)=>{
+   return `<div class="new-product">
+              <img src="${item.imgUrl}" alt="${item.id}">
+              <p>${item.username}</p>
+              <p>${item.price}</p>
+              <p class="cart-button">${item.addbutton}</p>
+              <p class="buy-button" data-id="${item.id}">${item.buybutton}</p>
+            </div>  `;
+})
+.join("");
+}else{
+  iteams.innerHTML=`<p id="stock-over">no items found!<p>`;
+  
+}
 });
+const allbutton =document.getElementsByClassName("all-products");
