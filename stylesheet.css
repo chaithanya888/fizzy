@@ -175,34 +175,30 @@ box-shadow: 8px 8px 21px rgba(0, 0, 0, 0.8);
     margin-right:10px;
    
   
-}.menu-option{
-    display: none;
-    position: absolute;
-    background-color: #1997FB;
-    max-width: 100px;
-    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 1.1);
 }
-.menu-option:hover{
-background-color: aquamarine;
+.menu-option a{
+    text-transform: capitalize;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+.menu-option{    
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px 70px;    
+}
 
-}
-.arrow-drop:hover .menu-option{
-    display: block;
+.menu-option a img{
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 120px;
+
 }
 .arrow-drop{
     display: inline-block;
     position: relative;
-}.arrow-drop a{
-    text-decoration: none;
-    color: aqua;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
-    padding: 2px 4px;
-    margin: auto;
-} 
-.icon-menu{
-    width: 2px;
-    height: 8px;
 }
 .arrow-drop img{
     display: flex;
@@ -215,7 +211,7 @@ background-color: aquamarine;
     margin-right:10px;
     cursor: pointer;
    
-} .arrow-drop :hover{
+} .arrow-drop img:hover{
     transform: rotate(-90deg);
 }
 .dropdown{
