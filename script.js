@@ -29,6 +29,7 @@ addanycloths(2661,"../images/sandel.webp","women sandels","1,999","add to cart",
 addanycloths(2662,"../images/heelswomen.webp","women heels","2,999","add to cart","buy now");
 
 let iteams=document.getElementsByClassName("newly-added-items")[0];
+allcloths(){ 
 iteams.innerHTML = womencloths
   .map((item) => {
     return `<div class="new-product">
@@ -40,7 +41,7 @@ iteams.innerHTML = womencloths
             </div>  `;
   })
   .join("");
-
+}
 
 
 let Quantity = document.getElementsByClassName("quantity-shower")[0];
