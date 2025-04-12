@@ -179,7 +179,7 @@ box-shadow: 8px 8px 21px rgba(0, 0, 0, 0.8);
     display: none;
     position: absolute;
     flex-direction: column;
-    background-color: rgb(28, 176, 255);
+    background-color: gray;
 }
 .menu-option a:hover{
 background-color: #002fffa3;
@@ -188,7 +188,7 @@ background-color: #002fffa3;
     display: flex;
     align-items: center; 
     text-decoration: none; 
-    color: rgb(0, 96, 134); 
+    color: rgb(12, 186, 255); 
     padding: 30px 50px;
     text-transform: capitalize; 
 }  
@@ -203,7 +203,7 @@ background-color: #002fffa3;
 }
 .arrow-drop button{
     border: none;
-    background-color: skyblue;
+    background: none;
     margin-right: 175px;
     margin-top: 15px;
 }
@@ -214,6 +214,7 @@ background-color: #002fffa3;
    
 } .arrow-drop button img:hover{
     transform: rotate(-90deg);
+    display: block;
 }
 .arrow-drop:hover .menu-option{
     display: block;
